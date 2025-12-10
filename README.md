@@ -26,9 +26,8 @@ I am an **Electrical Engineering** student at **IIT Palakkad** with a strong pas
 ## 📂 Project Structure
 
 ```text
-├── main.html          # The main HTML file serving the website
-├── styles/
-├── general.css    # Global styles (body, fonts)
-├── header.css     # Navigation bar and logo styles
-├── home.css       # Hero, About, Projects, and Contact sections
-└── README.md          # Project documentation
+├── index.html          # The main HTML file serving the website
+├── general.css         # Global styles (body, fonts)
+├── header.css          # Navigation bar and logo styles
+├── home.css            # Hero, About, Projects, and Contact sections
+└── README.md           # Project documentation
