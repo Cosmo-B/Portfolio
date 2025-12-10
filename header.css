@@ -1,0 +1,78 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    background-color: rgb(43, 52, 52);
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 55px; 
+    margin-bottom: 0px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    z-index: 99;
+}
+
+.logo{
+    padding-left: 50px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-right: 50px;
+}
+
+.home,
+.about,
+.projects,
+.dont,
+.know{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    background-color: rgb(72, 87, 87);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.home .selection,
+.about .selection,
+.projects .selection,
+.dont .selection,
+.know .selection{
+    height: 2px;
+    width: 0%; /* Starts invisible */
+    background-color: chartreuse;
+    position: absolute;
+    bottom: -9px; /* Sits nicely inside the button */
+    transition: width 0.2s ease-in-out;
+    border-radius: 2px;
+}
+
+.home:hover .selection,
+.about:hover .selection,
+.projects:hover .selection,
+.dont:hover .selection,
+.know:hover .selection{
+    width: 80%;
+}
+
+.button:hover{
+    /* background-color: rgb(105, 124, 124); */
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.button:active{
+    background-color: rgb(105, 124, 124);
+    transform: translateY(1px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+

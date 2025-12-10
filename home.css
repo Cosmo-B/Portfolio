@@ -1,0 +1,322 @@
+
+.hero-section {
+    background-color: #1c2028; 
+    color: white;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Aligns text to the left */
+    padding: 0 10%; /* Uses percentage for better mobile fit */
+    margin-top: 55px; 
+}
+
+.greeting {
+    font-size: 20px;
+    color: chartreuse;
+    margin-bottom: 0;
+}
+
+.hero-name {
+    font-size: 60px;
+    margin: 10px 0;
+    color: white;
+    font-weight: 700;
+}
+
+.hero-section-content {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    border: 1px solid chartreuse;
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: chartreuse; /* Fills in the color on hover */
+    color: #2b313d;
+}
+
+/* --- General Section Styling --- */
+.content-section {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- New About Section Styling --- */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.bio-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.bio-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(54, 65, 65, 0.5);
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.2s;
+    border-left: 3px solid chartreuse; /* Adds a cool accent line */
+}
+
+.bio-box h3 {
+    margin-top: 0;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: chartreuse;
+    font-weight: bold;
+}
+
+.interests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.interests-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #cccccc;
+}
+
+/* Custom bullet point using a character */
+.interests-list li::before {
+    content: "➢"; 
+    color: chartreuse;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.alt-bg {
+    background-color: #1c2026;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+/* Creates a small underline for titles */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: chartreuse;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.section-text {
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* --- Projects Grid --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 100px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.project-card {
+    background-color: rgb(54, 65, 65);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid transparent; /* Prepare for hover border */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+}
+
+.card-tech {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project-link {
+    font-size: 14px;
+    color: chartreuse;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Skills Tags --- */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+}
+
+.skill-tag {
+    background-color: rgba(72, 87, 87, 0.5); /* slightly transparent */
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid rgb(72, 87, 87);
+    transition: 0.2s;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    border-color: chartreuse;
+    color: chartreuse;
+    background-color: rgba(127, 255, 0, 0.1); /* Very faint green bg */
+}
+
+/* --- Footer / Contact --- */
+.footer-section {
+    background-color: rgb(15, 17, 22);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background-color: chartreuse;
+    color: #1c2026;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.socials {
+    margin-top: 60px;
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* --- Social Links Styling --- */
+.social-links-container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between items */
+}
+
+.social-link {
+    color: #cccccc; /* Light grey text */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s;
+    border-bottom: 2px solid transparent; /* Hidden underline */
+}
+
+.social-link:hover {
+    color: chartreuse; /* Turns green on hover */
+    border-bottom: 2px solid chartreuse; /* Adds green underline */
+}
+
+.separator {
+    color: #555; /* Dark grey line between the links */
+    font-size: 20px;
+}
+
+.footer-credit {
+    margin-top: 50px;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 1px;
+}/* --- Social Links Styling --- */
+.social-links-container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between items */
+}
+
+.social-link {
+    color: #cccccc; /* Light grey text */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s;
+    border-bottom: 2px solid transparent; /* Hidden underline */
+}
+
+.social-link:hover {
+    color: chartreuse; /* Turns green on hover */
+    border-bottom: 2px solid chartreuse; /* Adds green underline */
+}
+
+.separator {
+    color: #555; /* Dark grey line between the links */
+    font-size: 20px;
+}

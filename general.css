@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(20, 23, 29);
+    color: rgb(243, 236, 226);
+    font-family: "Comfortaa", sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+/* Removes default link styling for the navigation menu */
+a.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
