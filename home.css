@@ -320,3 +320,46 @@
     color: #555; /* Dark grey line between the links */
     font-size: 20px;
 }
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+    /* Adjust the big intro section */
+    .hero-section {
+        padding: 0 20px; /* Reduces side padding */
+        align-items: center; /* Centers text on mobile */
+        text-align: center;
+        margin-top: 0; /* Since header is not fixed on mobile anymore */
+    }
+
+    .hero-name {
+        font-size: 40px; /* Smaller text for the name */
+    }
+
+    .hero-section-content {
+        font-size: 16px;
+    }
+
+    /* Adjust the "About" boxes */
+    .about-container {
+        gap: 20px;
+    }
+
+    .bio-box {
+        min-width: 100%; /* Makes box take full width on phone */
+        margin-bottom: 10px;
+    }
+
+    /* Adjust Section Titles */
+    .section-title {
+        font-size: 28px;
+    }
+
+    /* Adjust Projects Grid spacing */
+    .projects-grid {
+        gap: 40px; /* Smaller gap between project cards */
+    }
+    
+    .project-card {
+        padding: 20px; /* Slightly less padding inside cards */
+    }
+}

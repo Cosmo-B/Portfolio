@@ -76,3 +76,28 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+    .header {
+        height: auto; /* Lets the header grow to fit stacked items */
+        flex-direction: column; /* Stacks logo and menu vertically */
+        padding: 15px 0;
+        position: relative; /* Un-fixes it so it scrolls with the page on mobile */
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 15px; /* Adds space between logo and menu */
+    }
+
+    .nav-menu {
+        padding-right: 0;
+        flex-wrap: wrap; /* Allows buttons to wrap to next line if needed */
+        justify-content: center;
+        gap: 10px; /* Space between buttons */
+    }
+    
+    .nav-menu .nav-link {
+        margin: 5px; /* specific spacing for mobile links */
+    }
+}
